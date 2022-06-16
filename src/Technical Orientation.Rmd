@@ -1,0 +1,38 @@
+---
+title: "draft"
+author: "Tatev"
+date: "10/19/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+data <- read.csv("/Users/martin/Documents/GitHub/orientation-technical/dat/2022-06-14-survey.csv")
+library(ggplot2)
+library(Hmisc)
+```
+
+```{r}
+describe(data)
+```
+
+
+```{r}
+ggplot(data, aes(x = Operating.System)) + geom_histogram(stat = "count")
+```
+
+
+
+
+
+
+
+
+
+
+
+
